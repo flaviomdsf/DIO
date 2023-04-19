@@ -1,0 +1,103 @@
+_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Iniciando o git no repositorio.png
+        Para o Desafio de Git e GitHub.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git add .
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Iniciando o git no repositorio.png
+        new file:   Para o Desafio de Git e GitHub.txt
+
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git commit -m "Criado txt para o desafio, inserido print do comando de inicialização do git."
+[master (root-commit) 1157cdc] Criado txt para o desafio, inserido print do comando de inicialização do git.
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Iniciando o git no repositorio.png
+ create mode 100644 Para o Desafio de Git e GitHub.txt
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git push add origin master
+error: src refspec origin does not match any
+error: failed to push some refs to 'add'
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git push https://github.com/flaviomdsf/DIO.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/flaviomdsf/DIO.git master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git sutatus
+git: 'sutatus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git remote add origin https://github.com/flaviomdsf/DIO.git
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 28.98 KiB | 9.66 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/flaviomdsf/DIO/pull/new/master
+remote:
+To https://github.com/flaviomdsf/DIO.git
+ * [new branch]      master -> master
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$ git pull origin master
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.26 KiB | 4.00 KiB/s, done.
+From https://github.com/flaviomdsf/DIO
+ * branch            master     -> FETCH_HEAD
+ + 1157cdc...dfc8f43 master     -> origin/master  (forced update)
+fatal: refusing to merge unrelated histories
+
+t_flaviomendes@SD-NTI-24477 MINGW64 ~/Documents/DIO (master)
+$
